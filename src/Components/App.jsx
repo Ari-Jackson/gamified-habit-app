@@ -1,15 +1,10 @@
-import { useState } from 'react'
+import { useState } from "react";
+import Container from "./Container";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
-  return (
-    <div className="App">
-      <div className='border-black rounded-sm border-solid border-2'>
-        <h1 className='text-orange-700'>Scoreboard</h1>
-      </div>
-    </div>
-  )
+  return <div className="App"></div>;
 }
 
-export default App
+export default App;
