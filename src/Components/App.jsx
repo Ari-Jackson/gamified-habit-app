@@ -1,10 +1,14 @@
 import { useState } from "react";
-import Container from "./Container";
+import { Todo } from "./Todos";
 
 function App() {
   const [count, setCount] = useState(0);
 
-  return <div className="App"></div>;
+  return (
+    <div className="App h-screen bg-teal-500">
+      <Todo />
+    </div>
+  );
 }
 
 export default App;
