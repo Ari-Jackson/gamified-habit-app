@@ -1,0 +1,27 @@
+[
+  {
+    "user_id": 1,
+    "user_habits": [
+      {
+        "title": "Wash Dishes",
+        "emoji": "🍽",
+        "total_frequency": "1",
+        "unit": ""
+      },
+      {
+        "title": "Drink Water",
+        "emoji": "☕️",
+        "total_frequency": "8",
+        "unit": "cups"
+      },
+      {
+        "title": "Meditate",
+        "emoji": "🧘🏽‍♀️",
+        "total_frequency": "25",
+        "unit": "minutes"
+      }
+    ],
+    "user_routines": [],
+    "user_todo": []
+  }
+]
