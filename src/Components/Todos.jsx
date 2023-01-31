@@ -3,18 +3,33 @@ import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
-export function Todo() {
+export default function Todo({ todoTitle, emoji }) {
+  const [completed, setCompleted] = useState(false);
+
+  function handleClick() {
+    setCompleted(!completed);
+  }
+
+  const fillerStyles = {
+    width: `${completed ? 100 : 0}%`,
+  };
+
   return (
-    <Card>
-      <img
-        class="mx-0 block h-24 shrink-0 rounded-full"
-        src="src/assets/images/11331b5cf7f853a4717cf8df4ccad807e47c1b09.png"
-        alt="character"
-      />
-      <div class="space-y-2 text-left">
-        <div class="space-y-0.5">
-          <p class="text-lg font-semibold text-black">Sample Text</p>
-          <p class="font-medium text-slate-500">Sample Text</p>
+    <Card onClick={handleClick}>
+      <div
+        style={fillerStyles}
+        className="flex h-full space-y-0 space-x-10 rounded-lg bg-violet-400 py-4 text-right transition-[width] duration-500 ease-in-out"
+      >
+        <span className="ml-8 block self-center rounded-lg bg-slate-100 p-3 text-4xl">
+          {emoji}
+        </span>
+        <div className="space-y-2 text-left">
+          <div className="space-y-0.5">
+            <p className="w-max text-lg font-semibold text-black">
+              {todoTitle}
+            </p>
+            <p className="font-semibold text-slate-300">Date</p>
+          </div>
         </div>
         <span className="block self-center text-2xl text-slate-700">
           <FontAwesomeIcon icon={faEllipsis} />
