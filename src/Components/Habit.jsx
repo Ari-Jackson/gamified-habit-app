@@ -17,13 +17,9 @@ export default function Habit({ todoTitle, emoji, total, units }) {
   };
 
   return (
-    <div
-      onClick={() => handleClick(total)}
-      className="m-auto w-fit cursor-pointer"
-    >
-      <Card>
-        <div
-          style={fillerStyles}
+    <Card onClick={() => handleClick()}>
+      <div
+        style={fillerStyles}
           className="flex h-full w-full space-y-0 space-x-6 rounded-lg bg-violet-400 py-4 text-right transition-[width] duration-500 ease-in-out"
         >
           <span className="ml-8 block self-center rounded-lg bg-slate-100 p-3 text-4xl">
@@ -42,8 +38,7 @@ export default function Habit({ todoTitle, emoji, total, units }) {
         <span className="block self-center text-2xl text-slate-700 opacity-80">
           <FontAwesomeIcon icon={faEllipsis} />
         </span>
-        </div>
-      </Card>
-    </div>
+      </div>
+    </Card>
   );
 }
