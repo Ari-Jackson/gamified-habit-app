@@ -1,7 +1,7 @@
 import Card from "./Card";
 import { useState } from "react";
 
-export default function Habit({ todoTitle, emoji, total }) {
+export default function Habit({ todoTitle, emoji, total, units }) {
   const [count, setCount] = useState(0);
 
   function handleClick() {
@@ -32,11 +32,11 @@ export default function Habit({ todoTitle, emoji, total }) {
               <p className="w-max text-lg font-semibold text-black">
                 {todoTitle}
               </p>
-              <p className="font-semibold text-slate-200">
-                {count} / {total}
-              </p>
-            </div>
+            <p className="w-max font-semibold text-slate-300">
+              {count} / {total} {units}
+            </p>
           </div>
+        </div>
         </div>
       </Card>
     </div>
