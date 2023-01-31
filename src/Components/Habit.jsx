@@ -1,5 +1,7 @@
 import Card from "./Card";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
 export default function Habit({ todoTitle, emoji, total, units }) {
   const [count, setCount] = useState(0);
@@ -37,6 +39,9 @@ export default function Habit({ todoTitle, emoji, total, units }) {
             </p>
           </div>
         </div>
+        <span className="block self-center text-2xl text-slate-700 opacity-80">
+          <FontAwesomeIcon icon={faEllipsis} />
+        </span>
         </div>
       </Card>
     </div>

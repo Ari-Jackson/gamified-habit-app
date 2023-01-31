@@ -1,4 +1,7 @@
 import Card from "./Card";
+import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
 export function Todo() {
   return (
@@ -13,6 +16,9 @@ export function Todo() {
           <p class="text-lg font-semibold text-black">Sample Text</p>
           <p class="font-medium text-slate-500">Sample Text</p>
         </div>
+        <span className="block self-center text-2xl text-slate-700">
+          <FontAwesomeIcon icon={faEllipsis} />
+        </span>
       </div>
     </Card>
   );
