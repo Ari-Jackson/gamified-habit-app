@@ -19,7 +19,7 @@ export default function SideBar() {
         {menueItems.map(({ icon, text }) => (
           <div className="group relative my-2 mx-auto flex h-12 w-12 cursor-pointer items-center justify-center rounded-3xl bg-violet-200 text-violet-900 transition-all duration-300 ease-linear hover:rounded-xl hover:bg-violet-900 hover:text-violet-200">
             {icon}
-            <span className="absolute left-14 m-2 w-auto min-w-max scale-0 rounded-md bg-violet-500 p-2 text-xs font-bold text-white shadow-md transition-all duration-300 group-hover:scale-100">
+            <span className="absolute left-14 m-4 w-auto min-w-max scale-0 rounded-md bg-violet-500 p-2 text-xs font-bold text-white shadow-md transition-all duration-300 group-hover:scale-100">
               {text}
             </span>
           </div>
