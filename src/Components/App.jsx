@@ -6,11 +6,28 @@ import SideBar from "./SideBar";
 
 function App() {
   return (
-    <div className="App h-screen bg-teal-500">
-      <SideBar />
-      <h1 className=" pb-5 text-center text-slate-200">Habit App</h1>
-      <div className="m-auto mb-2 w-fit">
-        <FontAwesomeIcon className="text-3xl text-white" icon={faPlus} />
+    <div className="App ">
+      <div className="fixed h-screen w-screen bg-hero-background bg-cover bg-no-repeat">
+        <SideBar />
+        <img
+          src="src/assets/images/f5a885b5d781e05edde29c4eb8ec48ee61904b62.png"
+          className="fixed right-24 h-screen"
+        />
+        {/* <Habit todoTitle={"Wash Dishes"} emoji={"🍽"} total={1} />
+        <Habit
+          todoTitle={"Drink Water"}
+          emoji={"💦"}
+          total={8}
+          units={"cups"}
+        />
+        <Habit
+          todoTitle={"Meditate"}
+          emoji={"🧘🏽‍♀️"}
+          total={25}
+          units={"minutes"}
+        />
+        <Todo todoTitle={"Meditate @ Home"} emoji={"🧘🏽‍♀️"} /> */}
+        <StatsCard />
       </div>
       <Habit todoTitle={"Wash Dishes"} emoji={"🍽"} total={1} />
       <Habit todoTitle={"Drink Water"} emoji={"💦"} total={8} units={"cups"} />
