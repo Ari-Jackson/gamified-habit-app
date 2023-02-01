@@ -1,8 +1,7 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Habit from "./Habit";
 import Todo from "./Todos";
 import SideBar from "./SideBar";
+import StatsCard from "./StatsCard";
 
 function App() {
   return (
@@ -29,10 +28,6 @@ function App() {
         <Todo todoTitle={"Meditate @ Home"} emoji={"🧘🏽‍♀️"} /> */}
         <StatsCard />
       </div>
-      <Habit todoTitle={"Wash Dishes"} emoji={"🍽"} total={1} />
-      <Habit todoTitle={"Drink Water"} emoji={"💦"} total={8} units={"cups"} />
-      <Habit todoTitle={"Meditate"} emoji={"🧘🏽‍♀️"} total={25} units={"minutes"} />
-      <Todo todoTitle={"Meditate @ Home"} emoji={"🧘🏽‍♀️"} />
     </div>
   );
 }
