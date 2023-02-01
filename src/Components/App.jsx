@@ -2,10 +2,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import Habit from "./Habit";
 import Todo from "./Todos";
+import SideBar from "./SideBar";
 
 function App() {
   return (
     <div className="App h-screen bg-teal-500">
+      <SideBar />
       <h1 className=" pb-5 text-center text-slate-200">Habit App</h1>
       <div className="m-auto mb-2 w-fit">
         <FontAwesomeIcon className="text-3xl text-white" icon={faPlus} />
