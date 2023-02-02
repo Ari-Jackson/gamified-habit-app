@@ -17,6 +17,11 @@ export default function StatsCard() {
             </div>
           </div>
           <hr />
+          <div className=" mx-8 flex h-20 items-center justify-center rounded-md">
+            <p className=" mr-3 text-3xl">XP</p>
+            <p className="ml-3">1500</p>
+            <ProgressBar completed={(500 / 1500) * 100} />
+          </div>
         </div>
       </Card>
     </div>
