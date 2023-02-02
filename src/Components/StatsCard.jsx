@@ -22,3 +22,20 @@ export default function StatsCard() {
     </div>
   );
 }
+
+const ProgressBar = ({ completed }) => {
+  console.log(completed);
+  const fillerStyles = {
+    width: `${completed}%`,
+  };
+
+  return (
+    <div className="h-2 w-8/12 rounded-full bg-slate-200">
+      <div
+        className="h-full rounded-full bg-yellow-200 text-right"
+        style={fillerStyles}
+      ></div>
+      <span></span>
+    </div>
+  );
+};
