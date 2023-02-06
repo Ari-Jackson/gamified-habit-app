@@ -1,9 +1,9 @@
-import Card from "./Card";
+import Card from "./In-Build/Card";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEllipsis } from "@fortawesome/free-solid-svg-icons";
 
-export default function Habit({ todoTitle, emoji, total, units }) {
+export default function Habit({ title, emoji, total, units }) {
   const [count, setCount] = useState(0);
 
   function handleClick() {
@@ -17,7 +17,7 @@ export default function Habit({ todoTitle, emoji, total, units }) {
   };
 
   return (
-    <div className="m-auto w-[25rem] cursor-pointer">
+    <div className="m-auto h-fit w-[25rem] cursor-pointer">
       <Card onClick={() => handleClick()}>
         <div
           style={fillerStyles}
@@ -28,9 +28,7 @@ export default function Habit({ todoTitle, emoji, total, units }) {
           </span>
           <div className="space-y-2 text-left">
             <div className="space-y-0.5">
-              <p className="w-max text-lg font-semibold text-black">
-                {todoTitle}
-              </p>
+              <p className="w-max text-lg font-semibold text-black">{title}</p>
               <p className="w-max font-semibold text-slate-300">
                 {count} / {total} {units}
               </p>
