@@ -3,7 +3,7 @@ import MainStatsCard from "./MainStatsCard";
 
 export default function App() {
   return (
-    <div className="App">
+    <main className="App">
       <div className="fixed h-full w-full bg-hero-background bg-cover bg-no-repeat">
         <SideBar />
         <img
@@ -12,6 +12,6 @@ export default function App() {
         />
         <MainStatsCard />
       </div>
-    </div>
+    </main>
   );
 }
