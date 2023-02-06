@@ -39,21 +39,7 @@ export default function MainStatsCard() {
   /* ------------------------------------ Status Box Info ------------------------------------*/
 }
 
-let statBoxInfo = [
-  { title: "Gold", number: 365, icon: faCoins, color: "text-amber-500" },
-  { title: "Mana", number: 10, icon: faGem, color: "text-cyan-500" },
-  { title: "Heart", number: 12, icon: faHeart, color: "text-rose-500" },
-];
-
-{
-  /* ------------------------------------ Progress Bars ------------------------------------*/
-}
-
-const ProgressBar = ({ completed }) => {
-  const fillerStyles = {
-    width: `${completed}%`,
-  };
-
+const ProgressBar = () => {
   return (
     <div className="h-4 w-full rounded-full bg-gray-300">
       <div
@@ -64,3 +50,31 @@ const ProgressBar = ({ completed }) => {
     </div>
   );
 };
+
+{
+  /* ------------------------------------ Status Box Info ------------------------------------*/
+}
+
+let statBoxInfo = [
+  {
+    title: "Gold",
+    number: 365,
+    icon: faCoins,
+    color: "text-amber-500",
+    id: "gold",
+  },
+  {
+    title: "Mana",
+    number: 10,
+    icon: faGem,
+    color: "text-cyan-500",
+    id: "mana",
+  },
+  {
+    title: "Heart",
+    number: 12,
+    icon: faHeart,
+    color: "text-rose-500",
+    id: "heart",
+  },
+];
