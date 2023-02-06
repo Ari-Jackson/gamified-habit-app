@@ -1,8 +1,11 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-export default function StatusBox({ title, number, icon, color }) {
+export default function StatusBox({ title, number, icon, color, id }) {
   return (
-    <div className="h-full w-2/4 rounded-md text-center font-tech hover:cursor-pointer hover:bg-slate-200 hover:shadow-md">
+    <div
+      key={id}
+      className="h-full w-2/4 rounded-md text-center font-tech hover:cursor-pointer hover:bg-slate-200 hover:shadow-md"
+    >
       <p className={color}>{title}</p>
       <div className="flex-box-center">
         <FontAwesomeIcon icon={icon} className={color + " text-5xl"} />
