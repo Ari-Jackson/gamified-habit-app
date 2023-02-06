@@ -7,7 +7,3 @@ export default function Card({ children, onClick }) {
     </div>
   );
 }
-
-{
-  /*  */
-}
