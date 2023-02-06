@@ -8,6 +8,9 @@ module.exports = {
         "hero-character":
           "url('/src/assets/images/f5a885b5d781e05edde29c4eb8ec48ee61904b62.png')",
       },
+      fontFamily: {
+        tech: ['"Share Tech Mono"', "monospace"],
+      },
     },
   },
   plugins: [],
