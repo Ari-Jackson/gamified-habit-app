@@ -1,4 +1,5 @@
 import DailySummary from "./DailySummary";
+import CharcterInfo from "./CharacterInfo";
 import StatusBox from "./StatusBox";
 import { faCoins, faGem, faHeart } from "@fortawesome/free-solid-svg-icons";
 
@@ -7,13 +8,7 @@ export default function MainStatsCard() {
     <div className="ml-40 mt-20 h-auto w-[650px] max-w-7xl space-y-0 space-x-6 rounded-xl bg-white pb-3">
       <div className="flex h-auto w-full flex-col">
         {/* ------------------------------------ Character Info ------------------------------------*/}
-        <div className="flex-box-center space-x-6 p-5 font-tech">
-          <p className="rounded-full bg-blue-500 p-4 text-center">House Logo</p>
-          <div className="mt-4 w-full">
-            <h1 className="text-left font-bold text-slate-700">Ari-the-don</h1>
-            <h3 className="text-2xl text-slate-600">Level 1</h3>
-          </div>
-        </div>
+        <CharcterInfo />
         <hr />
         {/* ------------------------------------ Status Bars ------------------------------------*/}
 
