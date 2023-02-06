@@ -32,10 +32,12 @@ This log will be to keep track of all of the **major challenges and hurdles**, w
 > ### Workflow
 >
 > - Keeping a steady workflow for such a huge venture (as a solo dev project) is crazy intimidating and I know it wont get done unelss I have a plan. I created a preliminary one but I might need more research into how to manage a coding project and how to think about a coding projects in general. For now my plan is:
->   1.  Complete gold, crystals, and a daily summary for StatsCard
+>   1.  ✅ Complete gold, crystals, and a daily summary for StatsCard
+>   1.  Build the missions page set up (\*\*\*Updated after)
 >   1.  Update none checklist dailies (currently called habits) to make the name, total, units and emoji (may replace emoji with a gold/xp symbol btw) editable and add "increment by", difficulty, notes and time
 >   1.  Update dailies (currently called habits) to include checklist. If checklist is present the progress bar will update based on the % of completed checklist items. Name, emoji, difficulty, notes, and time will be editable.
 >   1.  Build a habit component with a color indicator or how strong the habit is, difficulty, notes, reset interval
 >   1.  Update Todo to make name and emoji editable and add difficulty and notes
 >   1.  Build the timer, stop watch, and pomodoro "Tools" pages
 >   1.  Convert to Typescript, build backend, and connect.
+>   1.  Determine point logic (\*\*\*Updated after)
